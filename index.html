@@ -16,12 +16,16 @@
         }
         .container {
             max-width: 800px;
-            margin: 100px auto;
+            margin: 50px auto 100px; /* Ajustement de la marge pour rapprocher "stake.rip" */
             text-align: center;
         }
         h1 {
             text-align: center;
             color: #fff;
+            margin-bottom: 10px; /* Ajout d'un espacement après les titres */
+        }
+        .subtitle {
+            color: #ddd; /* Couleur gris clair pour le texte "cool" et "remi" */
         }
         .btn {
             display: inline-block;
@@ -37,12 +41,15 @@
             background-color: #0056b3;
             transform: scale(1.1);
         }
+        .smaller {
+            font-size: 0.8em; /* Réduction de la taille du texte "stake.rip" */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to cool and remi's casino</h1>
-        <h1>stake.rip</h1>
+        <h1>Welcome to <span class="subtitle">cool and remi's</span> casino</h1>
+        <h1 class="smaller">stake.rip</h1>
         <a href="/mines" class="btn">Mines</a>
         <a href="/tower" class="btn">Tower Of Dragon</a>
         <a href="/keno" class="btn">Keno</a>
