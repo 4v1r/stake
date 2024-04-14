@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>home *</title>
+    <title>home</title>
     <meta name="robots" content="index, follow">
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <style>
@@ -13,24 +13,21 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column; /* Permet de disposer les éléments verticalement */
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            display: flex; /* Ajout pour utiliser Flexbox */
+            justify-content: center; /* Centrage horizontal */
+            align-items: center; /* Centrage vertical */
+            height: 100vh; /* Centrage vertical */
         }
 
         .container {
             max-width: 800px;
             text-align: center;
-            margin-top: auto; /* Permet de pousser la div vers le bas */
         }
 
         h1 {
             text-align: center;
             color: #fff;
             margin-bottom: 10px;
-            margin-top: 0; /* Pour annuler la marge supérieure par défaut */
         }
 
         .subtitle {
@@ -38,9 +35,12 @@
         }
 
         .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
+            display: block; /* changer display à block pour que les boutons occupent toute la largeur */
+            width: 90%; /* ajuster la largeur à 90% de la largeur de la page */
+            max-width: 400px; /* ajouter une largeur maximale pour les boutons */
+            margin: 10px auto; /* centrer horizontalement les boutons */
+            padding: 20px 30px; /* ajuster le rembourrage pour une apparence plus grande */
+            font-size: 1.2em; /* augmenter la taille de la police */
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
