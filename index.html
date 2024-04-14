@@ -13,10 +13,10 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            display: flex; /* Ajout pour utiliser Flexbox */
-            justify-content: center; /* Centrage horizontal */
-            align-items: center; /* Centrage vertical */
-            height: 100vh; /* Centrage vertical */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .container {
@@ -24,12 +24,13 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center; /* Centrage vertical */
+            align-items: center; /* Centrage horizontal */
             height: 100vh;
         }
 
         .title-container {
-            margin-bottom: 20px; /* Ajouter un espace entre le titre et les boutons */
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -43,22 +44,21 @@
         }
 
         .btn {
-        display: block;
-        width: 90%;
-        max-width: 400px;
-        margin: 10px auto;
-        padding: 30px 30px; /* Augmenter le padding vertical */
-        font-size: 1.2em;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: transform 0.3s, background-color 0.3s;
-        background-size: cover;
-        background-position: center;
-        border: 2px solid #fff;
-        cursor: pointer;
+            display: block;
+            width: 90%;
+            max-width: 400px;
+            margin: 10px auto;
+            padding: 30px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, background-color 0.3s;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #fff;
+            cursor: pointer;
         }
-
 
         .btn:hover {
             transform: scale(1.1);
