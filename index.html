@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>home *</title>
+    <title>home</title>
     <meta name="robots" content="index, follow">
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <style>
@@ -20,14 +20,16 @@
         }
 
         .container {
-        max-width: 800px;
-        text-align: center;
-        display: flex;
-        flex-direction: column; /* Pour aligner les éléments verticalement */
-        justify-content: flex-start; /* Aligner les éléments en haut */
-        height: 100vh;
+            max-width: 800px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100vh;
         }
 
+        .title-container {
+            margin-bottom: 20px; /* Ajouter un espace entre le titre et les boutons */
         }
 
         h1 {
@@ -80,8 +82,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to <span class="subtitle">cool</span> and <span class="subtitle">remi</span>'s casino.</h1>
-        <h1 class="smaller">stake.rip</h1>
+        <div class="title-container">
+            <h1>Welcome to <span class="subtitle">cool</span> and <span class="subtitle">remi</span>'s casino.</h1>
+            <h1 class="smaller">stake.rip</h1>
+        </div>
         <a href="/mines" class="btn mines">Mines</a>
         <a href="/tower" class="btn tower">Tower Of Dragon</a>
         <a href="/keno" class="btn keno">Keno</a>
