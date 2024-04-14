@@ -13,14 +13,14 @@
             color: #fff;
             margin: 0;
             padding: 0;
+            display: flex; /* Utilisation de flexbox pour centrer verticalement et horizontalement */
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Définition de la hauteur de l'écran */
         }
         .container {
             max-width: 800px;
-            margin: 50px auto 100px;
             text-align: center;
-            display: flex; /* Utilisation de flexbox pour centrer et aligner les boutons */
-            justify-content: center;
-            flex-wrap: wrap; /* Permettre le retour à la ligne des éléments si nécessaire */
         }
         h1 {
             text-align: center;
@@ -41,8 +41,8 @@
             background-position: center;
             border: 2px solid #fff;
             cursor: pointer;
-            flex-grow: 1; /* Permettre aux boutons de prendre toute la largeur disponible */
-            max-width: calc(33.33% - 20px); /* Fixer la largeur maximale des boutons pour éviter le débordement */
+            flex-grow: 1;
+            max-width: calc(33.33% - 20px);
         }
         .btn:hover {
             transform: scale(1.1);
