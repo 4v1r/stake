@@ -18,6 +18,9 @@
             max-width: 800px;
             margin: 50px auto 100px;
             text-align: center;
+            display: flex; /* Utilisation de flexbox pour centrer et aligner les boutons */
+            justify-content: center;
+            flex-wrap: wrap; /* Permettre le retour à la ligne des éléments si nécessaire */
         }
         h1 {
             text-align: center;
@@ -28,7 +31,6 @@
             color: #ddd;
         }
         .btn {
-            display: inline-block;
             padding: 15px 30px;
             margin: 10px;
             color: #fff;
@@ -39,6 +41,8 @@
             background-position: center;
             border: 2px solid #fff;
             cursor: pointer;
+            flex-grow: 1; /* Permettre aux boutons de prendre toute la largeur disponible */
+            max-width: calc(33.33% - 20px); /* Fixer la largeur maximale des boutons pour éviter le débordement */
         }
         .btn:hover {
             transform: scale(1.1);
@@ -59,7 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to <span class="subtitle">cool</span> and <span class="subtitle">remi's</span> casino.</h1>
+        <h1>Welcome to <span class="subtitle">cool</span> and <span class="subtitle">remi</span>'s casino.</h1>
         <h1 class="smaller">stake.rip</h1>
         <a href="/mines" class="btn mines">Mines</a>
         <a href="/tower" class="btn tower">Tower Of Dragon</a>
