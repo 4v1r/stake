@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>home</title>
+    <title>home *</title>
     <meta name="robots" content="index, follow">
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <style>
@@ -13,21 +13,24 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            display: flex; /* Ajout pour utiliser Flexbox */
-            justify-content: center; /* Centrage horizontal */
-            align-items: center; /* Centrage vertical */
-            height: 100vh; /* Centrage vertical */
+            display: flex;
+            flex-direction: column; /* Permet de disposer les éléments verticalement */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .container {
             max-width: 800px;
             text-align: center;
+            margin-top: auto; /* Permet de pousser la div vers le bas */
         }
 
         h1 {
             text-align: center;
             color: #fff;
             margin-bottom: 10px;
+            margin-top: 0; /* Pour annuler la marge supérieure par défaut */
         }
 
         .subtitle {
